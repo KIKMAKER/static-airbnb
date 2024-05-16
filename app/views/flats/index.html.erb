@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Batch #1602's Flats</h1>
+
+  <% @flats.each do |flat| %>
+    <h2><%= flat["name"] %></h2>
+    <h3>Available for <%= flat["price"] %> <%= flat["priceCurrency"] %></h3>
+    <%= image_tag flat["imageUrl"], width: "750px" %>
+  <% end %>
+</div>
